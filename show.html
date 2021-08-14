@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="./lib/vue.js"></script>
+    <script src="./lib/jquery.js"></script>
+    <link href="./lib/element.css" rel="stylesheet">
+    <script src="./lib/element.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>I Love You ❤️</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -97,7 +101,7 @@
 
 <body>
 <div class="cs">
-    <img src="images/lover.jpg" id="logo">
+    <img src="picture/方逸萍.jpeg" id="logo">
 </div>
 <canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" style="color: #ed3073;">
@@ -108,7 +112,7 @@
 <script language="javascript">
     function show_date_time() {
         window.setTimeout("show_date_time()", 1000);
-        BirthDay = new Date("1/20/2018 00:00:00");//这个日期是可以修改的
+        BirthDay = new Date("4/24/2021 12:00:00");//这个日期是可以修改的
         today = new Date();
         timeold = (today.getTime() - BirthDay.getTime());
         sectimeold = timeold / 1000
@@ -132,7 +136,7 @@
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
             //想说的话
-            S.UI.simulate("{{被表白者}}|I'm|许远志|Nice|to|Meet|You|#countdown 3|#time");
+            S.UI.simulate("方逸萍|I'm|周文博|I|Love|You|too|#countdown 3|#time");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
